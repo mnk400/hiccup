@@ -16,6 +16,7 @@
   padding: 13px 20px 13px 40px;
   width: 100%;
   color: var(--text-color);
+  transition: all 0.3s ease;
 }
 
 .search:active,
@@ -26,7 +27,10 @@
 .results {
   position: absolute;
   width: 100%;
-  background: rgba(var(--theme-bg-1-rgb), 0.9);
+  background: rgba(var(--theme-bg-1-rgb), 0.8);
+  border-radius: 6px;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
   z-index: 10;
 }
 
@@ -78,7 +82,7 @@
 
 .backdrop {
   position: fixed;
-  background: rgba(var(--theme-bg-1-rgb), 0.57);
+  background: rgba(var(--theme-bg-1-rgb), 0.3);
   height: 100%;
   width: 100%;
   top: 0;
