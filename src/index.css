@@ -1,19 +1,33 @@
 :root {
-  --theme-bg-1: black;
-  --theme-bg-2: #151515;
-  --theme-bg-3: #2d2d2d;
-  --theme-color-1: #abaaaa;
-  --theme-color-disabled: #555;
-  --theme-highlight-1: gold;
+  /* Original theme variables mapped to new color scheme */
+  --theme-bg-1: var(--background-main, #1a1a1a);
+  --theme-bg-2: var(--background-darker, #2a2a2a);
+  --theme-bg-3: var(--code-bg, #212121);
+  --theme-color-1: var(--text-color, #d0d0d0);
+  --theme-color-disabled: var(--black-accent, rgba(256, 256, 256, 0.3));
+  --theme-highlight-1: var(--red-accent, #cf778c);
   --theme-warning-1: #f44336;
   --theme-success-1: #87cc58;
 
-  --theme-bg-1-rgb: 0, 0, 0;
-  --theme-bg-2-rgb: 21, 21, 21;
-  --theme-bg-3-rgb: 45, 45, 45;
-  --theme-highlight-1-rgb: 255, 215, 0;
+  /* RGB versions for rgba usage */
+  --theme-bg-1-rgb: 26, 26, 26;
+  --theme-bg-2-rgb: 42, 42, 42;
+  --theme-bg-3-rgb: 33, 33, 33;
+  --theme-highlight-1-rgb: 207, 119, 140;
   --theme-warning-1-rgb: 244, 67, 54;
   --theme-success-1-rgb: 135, 204, 88;
+
+  /* New color scheme variables */
+  --background-main: #1a1a1a;
+  --background-darker: #2a2a2a;
+  --text-color: #d0d0d0;
+  --sec-text-color: #c2c2c2;
+  --red-accent: #cf778c;
+  --black-accent: rgba(256, 256, 256, 0.3);
+  --black-accent-hover: rgba(256, 256, 256, 0.5);
+  --min-translucent: rgba(256, 256, 256, 0.07);
+  --code-bg: #212121;
+  --note-bg: #4a606a;
 
   --ease-1: cubic-bezier(0.075, 0.82, 0.165, 1);
 }

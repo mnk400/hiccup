@@ -1,7 +1,7 @@
 .hotkeyContainer {
   padding: 10px;
   background-color: var(--theme-bg-1);
-  border-radius: 5px;
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   gap: 10px;

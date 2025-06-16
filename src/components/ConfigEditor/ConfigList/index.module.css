@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border-radius: 10px;
+  border-radius: 6px;
   justify-content: space-between;
   border: 2px solid var(--theme-bg-1);
   overflow: hidden;
@@ -22,7 +22,7 @@
 
 .list::-webkit-scrollbar-thumb {
   background-color: var(--theme-highlight-1);
-  border-radius: 10px;
+  border-radius: 6px;
   outline: none;
 }
 
@@ -74,7 +74,7 @@
 .list-item-remote.active {
   background-color: var(--theme-highlight-1);
   color: var(--theme-bg-1);
-  border-radius: 3px;
+  border-radius: 6px;
   margin: 2px;
   padding: 8px;
 }
@@ -115,7 +115,7 @@
 .action:focus {
   outline: none;
   color: var(--theme-highlight-1);
-  border-radius: 3px;
+  border-radius: 6px;
 }
 
 .details {

@@ -12,13 +12,14 @@
   background-position: center;
   transition: opacity 0.1s ease-in-out;
   padding: 10px;
+  border-radius: 4px;
 }
 
 .container::after {
   width: 100%;
   position: absolute;
   height: 100%;
-  background: linear-gradient(-135deg, transparent, #0000004d);
+  background: linear-gradient(-135deg, transparent, rgba(var(--theme-bg-1-rgb), 0.3));
   content: '';
   z-index: -1;
   bottom: 0;
@@ -58,7 +59,7 @@ button:focus > .delete-icon {
 .edit-icon:global(.dragging),
 .delete-icon:global(.dragging) {
   opacity: 1;
-  border: 2px dashed var(--theme-highlight-1);
+  border: 2px dashed var(--red-accent);
   width: 80%;
   height: 80%;
   display: flex;
@@ -70,8 +71,8 @@ button:focus > .delete-icon {
   place-items: center;
   width: 100%;
   justify-content: unset;
-  border: 2px dashed var(--theme-highlight-1);
-  color: var(--theme-highlight-1);
+  border: 2px dashed var(--red-accent);
+  color: var(--red-accent);
   background: transparent;
   transition: background-color 0.5s var(--ease-1);
   cursor: pointer;

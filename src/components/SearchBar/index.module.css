@@ -2,31 +2,31 @@
   width: 100%;
   max-width: 1000px;
   opacity: 1;
-  color: var(--theme-color-1);
+  color: var(--text-color);
   position: relative;
   z-index: 10;
 }
 
 .search {
-  background-color: #19191938;
-  border-radius: 2px;
+  background-color: rgba(var(--theme-bg-1-rgb), 0.22);
+  border-radius: 6px;
   backdrop-filter: blur(2px);
-  border: 1px solid var(--theme-bg-2);
+  border: 1px solid var(--background-darker);
   font-size: 1rem;
   padding: 13px 20px 13px 40px;
   width: 100%;
-  color: var(--theme-color-1);
+  color: var(--text-color);
 }
 
 .search:active,
 .search:focus {
-  outline: 1px solid var(--theme-highlight-1);
+  outline: 1px solid var(--red-accent);
 }
 
 .results {
   position: absolute;
   width: 100%;
-  background: #000000e8;
+  background: rgba(var(--theme-bg-1-rgb), 0.9);
   z-index: 10;
 }
 
@@ -34,9 +34,9 @@
   display: block;
   padding: 10px 20px;
   backdrop-filter: blur(4px);
-  border: 1px solid var(--theme-bg-2);
+  border: 1px solid var(--background-darker);
   margin-top: 2px;
-  border-radius: 3px;
+  border-radius: 6px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -44,11 +44,11 @@
 
 .result:focus,
 .result:active {
-  outline: 1px solid var(--theme-highlight-1);
+  outline: 1px solid var(--red-accent);
 }
 
 .url {
-  color: var(--theme-color-disabled);
+  color: var(--black-accent);
   margin-left: 15px;
   font-size: 0.8em;
 }
@@ -67,18 +67,18 @@
 }
 
 .featured-icon {
-  color: var(--theme-highlight-1);
+  color: var(--red-accent);
   margin-right: 10px;
 }
 
 .placeholder,
 .provider {
-  color: var(--theme-color-disabled);
+  color: var(--black-accent);
 }
 
 .backdrop {
   position: fixed;
-  background: #00000091;
+  background: rgba(var(--theme-bg-1-rgb), 0.57);
   height: 100%;
   width: 100%;
   top: 0;
@@ -88,12 +88,12 @@
 
 .modal-section {
   padding: 10px;
-  background: var(--theme-bg-1);
-  border-radius: 5px;
+  background: var(--background-main);
+  border-radius: 6px;
   margin-bottom: 10px;
 }
 .modal-section .modal-section-title {
-  color: var(--theme-color-disabled);
+  color: var(--black-accent);
 }
 
 .modal-section-title {
@@ -109,9 +109,9 @@
 
 .modal-provider {
   padding: 7px 4px 7px 10px;
-  background: var(--theme-bg-3);
+  background: var(--code-bg);
   display: grid;
-  border-radius: 5px;
+  border-radius: 6px;
   grid-template-columns: 1fr auto;
 }
 

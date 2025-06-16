@@ -2,7 +2,7 @@
   grid-area: details;
   background-color: var(--theme-bg-1);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 6px;
   display: flex;
   flex-direction: column;
   gap: 10px;

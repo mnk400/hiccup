@@ -26,7 +26,7 @@
 
 .edit-container {
   position: absolute;
-  background: linear-gradient(90deg, #00000054, #000000c9, #000000c9);
+  background: linear-gradient(90deg, rgba(var(--theme-bg-1-rgb), 0.33), rgba(var(--theme-bg-1-rgb), 0.79), rgba(var(--theme-bg-1-rgb), 0.79));
   display: flex;
   padding: 0 15px;
   width: 100%;
@@ -40,7 +40,7 @@
 
 .edit-container:global(.dragging) {
   background: transparent;
-  border: 1px dashed var(--theme-highlight-1);
+  border: 1px dashed var(--red-accent);
 }
 
 .edit-icon,
@@ -62,13 +62,14 @@ button:focus > .delete-icon {
 }
 
 .add-card {
-  border: 1px dashed var(--theme-highlight-1);
-  color: var(--theme-highlight-1);
+  border: 1px dashed var(--red-accent);
+  color: var(--red-accent);
   text-align: center;
   cursor: pointer;
   background-color: transparent;
   width: 100%;
   transition: background-color 0.5s var(--ease-1);
+  border-radius: 6px;
 }
 
 .edit-container:global(.highlight),

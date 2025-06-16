@@ -1,6 +1,6 @@
 .modal {
   display: flex;
-  border-radius: 10px;
+  border-radius: 6px;
   box-shadow: 0.3rem 0.3rem 0.6rem rgba(var(--theme-bg-1-rgb), 0.4) -0.2rem -0.2rem
     0.5rem rgba(var(--theme-bg-3-rgb), 0.3);
   width: 100%;
@@ -9,7 +9,7 @@
 
 @media (max-width: 600px) {
   .modal {
-    border-radius: 0;
+    border-radius: 6px;
   }
 }
 

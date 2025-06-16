@@ -1,7 +1,7 @@
 .error {
-  border: 1px solid red;
-  border-radius: 5px;
-  background-color: #ff00001a;
+  border: 1px solid var(--theme-warning-1);
+  border-radius: 4px;
+  background-color: rgba(var(--theme-warning-1-rgb), 0.1);
   padding: 5px 8px;
   white-space: pre;
   font-family: monospace;

@@ -6,7 +6,7 @@
 }
 
 .featured-item {
-  border-radius: 5px;
+  border-radius: 4px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@
 }
 
 .category-item {
-  border-radius: 5px;
+  border-radius: 6px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
