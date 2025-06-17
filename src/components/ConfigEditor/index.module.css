@@ -16,10 +16,11 @@
 .config-actions-container {
   position: fixed;
   display: flex;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
   color: var(--theme-color-1);
-  gap: 20px;
+  gap: 10px;
+  scale: 0.8;
 }
 
 /* .icon {

@@ -32,6 +32,7 @@ const Icon: FunctionComponent<Props> = ({
         className={[styles.icon, className].join(' ')}
         style={{
           width: size + 'px',
+          height: 'auto', // Ensure proper scaling with FontAwesome
         }}
         {...(as !== 'button' && { 'data-testid': testId })}
         {...(as !== 'button' && onClick)}
