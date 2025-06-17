@@ -12,8 +12,8 @@
 }
 
 .bottomRight {
-  bottom: 8px;
-  right: 8px;
+  bottom: 5px;
+  right: 5px;
 }
 
 .infoIconContainer.editing.topRight {
@@ -30,11 +30,13 @@
 
 .infoIcon {
   color: var(--text-color);
+  opacity: 1;
   cursor: pointer;
 }
 
 .infoIcon:hover {
   color: var(--accent-color);
+  opacity: 0.9;
   transition: all 0.1s ease-in-out;
 }
 
@@ -76,6 +78,10 @@
 
 .notesContent img {
   max-width: 100%;
+}
+
+.notesContent a {
+  color: var(--blue-accent);
 }
 
 .notesContent table {
