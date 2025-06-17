@@ -119,7 +119,6 @@ const SearchBar = () => {
         onKeyPress={handleDefaultSearch}
         placeholder={placeholder}
         autoComplete="off"
-        autoFocus={true}
         disabled={editing}
         ref={(el) => el && (resultsRef.current[0] = el)}
       />
