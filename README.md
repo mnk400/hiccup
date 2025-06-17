@@ -1,15 +1,8 @@
 # Hiccup
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/ashwin-pc/hiccup)
-![GitHub](https://img.shields.io/github/license/ashwin-pc/hiccup)
-[![Tests](https://github.com/ashwin-pc/hiccup/actions/workflows/tests.yml/badge.svg?branch=master&event=push)](https://github.com/ashwin-pc/hiccup/actions/workflows/tests.yml/badge.svg?branch=master&event=push)
-[![CI](https://github.com/ashwin-pc/hiccup/actions/workflows/deploy_to_server.yml/badge.svg)](https://github.com/ashwin-pc/hiccup/actions/workflows/deploy_to_server.yml)
-
 ![](public/logo512.png)
 
 A static start page to get to your most important links, **FAST**. You can use this for your home server, new tab using browser extentions, use the **demo page** directly or basically anywhere you can server a static webpage from!
-
-### [Live Demo](https://designedbyashw.in/test/hiccup/)
 
 ## Features
 

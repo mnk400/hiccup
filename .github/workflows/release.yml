@@ -1,9 +1,10 @@
 name: Release Workflow
 
 on:
+  pull_request:
+    branches: [master]
   push:
-    tags:
-      - 'v*' # Matches tags starting with 'v'
+    branches: [master]
 
 jobs:
   release:
