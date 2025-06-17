@@ -18,14 +18,14 @@
   --theme-success-1-rgb: 135, 204, 88;
 
   /* New color scheme variables */
-  --background-main: #1a1a1a;
-  --background-darker: #2a2a2a;
+  --background-main: #000;
+  --background-darker: #1a1a1a;
   --text-color: #d0d0d0;
   --sec-text-color: #c2c2c2;
   --red-accent: #cf778c;
   --black-accent: rgba(256, 256, 256, 0.3);
   --black-accent-hover: rgba(256, 256, 256, 0.5);
-  --min-translucent: rgba(256, 256, 256, 0.07);
+  --min-translucent: rgba(256, 256, 256, 0.1);
   --code-bg: #212121;
   --note-bg: #4a606a;
 

@@ -1,0 +1,93 @@
+.infoIconContainer {
+  position: absolute;
+  z-index: 20;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  pointer-events: all;
+}
+
+.topRight {
+  top: 14px;
+  right: 8px;
+}
+
+.bottomRight {
+  bottom: 8px;
+  right: 8px;
+}
+
+.infoIconContainer.editing.topRight {
+  right: 40px;
+}
+
+.infoIconContainer.editing.bottomRight {
+  right: 8px;
+}
+
+.infoIconContainer:hover {
+  opacity: 1;
+}
+
+.infoIcon {
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.infoIcon:hover {
+  color: var(--accent-color);
+  transition: all 0.1s ease-in-out;
+}
+
+.notesTitle {
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+.notesContent {
+  padding: 0 10px 10px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.notesContent a:hover {
+  text-decoration: underline;
+}
+
+.notesContent code {
+  background-color: #f5f5f5;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+.notesContent pre {
+  background-color: #f5f5f5;
+  padding: 8px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.notesContent blockquote {
+  border-left: 4px solid #ddd;
+  padding-left: 16px;
+  margin-left: 0;
+  color: #666;
+}
+
+.notesContent img {
+  max-width: 100%;
+}
+
+.notesContent table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.notesContent th, .notesContent td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.notesContent tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

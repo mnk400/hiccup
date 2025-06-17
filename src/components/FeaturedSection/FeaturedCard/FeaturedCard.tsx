@@ -9,6 +9,7 @@ import { EditModalField } from 'components/EditLinkModal/EditLinkModal'
 import { transformEntityToFields } from 'components/EditLinkModal/transforms'
 import { DropProps } from 'components/common/Drop'
 import { classNames } from 'modules/utils'
+import { NotesModal } from 'components/NotesModal'
 
 interface EditContainerProps {
   onEdit: (modalData: EditModalField[]) => void
@@ -25,7 +26,7 @@ interface Props extends EditContainerProps {
 }
 
 const FeaturedCard: FC<Props> = ({ link, editing, ...editingProps }) => {
-  const { name, link: linkUrl, background } = link || {}
+  const { name, link: linkUrl, background, notes } = link || {}
 
   const backgroundUrl = getBgURL(background)
 
@@ -41,6 +42,7 @@ const FeaturedCard: FC<Props> = ({ link, editing, ...editingProps }) => {
       data-testid="featured-card"
       {...cardProps}
     >
+      {notes && <NotesModal notes={notes} title={name} editing={editing} position="bottom-right" />}
       <EditContainer {...editingProps} link={link} editing={editing} />
       {name}
     </Card>

@@ -9,6 +9,7 @@ import { transformEntityToFields } from 'components/EditLinkModal/transforms'
 import { EditModalField } from 'components/EditLinkModal/EditLinkModal'
 import { DropProps } from 'components/common/Drop'
 import { classNames } from 'modules/utils'
+import NotesModal from 'components/NotesModal'
 
 interface EditContainerProps extends DropProps<HTMLDivElement> {
   onEdit: (fields: EditModalField[]) => void
@@ -22,7 +23,7 @@ interface CategoryCardProps extends EditContainerProps {
 }
 
 const CategoryCard = ({ link, editing, ...editProps }: CategoryCardProps) => {
-  const { name, link: linkUrl } = link
+  const { name, link: linkUrl, notes } = link
 
   return (
     <Card
@@ -33,6 +34,7 @@ const CategoryCard = ({ link, editing, ...editProps }: CategoryCardProps) => {
     >
       <span className={styles.name}>{name}</span>
       <span className={styles.link}>{linkUrl}</span>
+      {notes && <NotesModal notes={notes} title={name} editing={editing} position="top-right" />}
       <EditContainer editing={editing} {...editProps} link={link} />
     </Card>
   )

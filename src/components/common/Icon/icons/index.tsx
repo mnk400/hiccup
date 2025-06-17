@@ -9,6 +9,7 @@ import { ReactComponent as FolderPlus } from './folder-plus-solid.svg'
 import { ReactComponent as Glasses } from './glasses-solid.svg'
 import { ReactComponent as Earth } from './globe-americas-solid.svg'
 import { ReactComponent as Image } from './image-solid.svg'
+import { ReactComponent as Info } from './info-circle-solid.svg'
 import { ReactComponent as Edit } from './pen-solid.svg'
 import { ReactComponent as Add } from './plus-circle-solid.svg'
 import { ReactComponent as Plus } from './plus-solid.svg'
@@ -34,6 +35,7 @@ const icons = {
   glasses: Glasses,
   earth: Earth,
   image: Image,
+  info: Info,
   save: Save,
   table: Table,
   times: Times,

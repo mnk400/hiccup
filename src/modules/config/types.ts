@@ -10,6 +10,7 @@ export interface LinksEntity {
   name: string
   link: string
   tags?: string
+  notes?: string
 }
 
 export interface FeaturedEntity extends LinksEntity {

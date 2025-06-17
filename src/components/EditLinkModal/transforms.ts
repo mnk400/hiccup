@@ -2,6 +2,15 @@ import { EditModalField, Entities } from './EditLinkModal'
 
 export const transformEntityToFields = (link: Entities): EditModalField[] =>
   Object.entries(link).map(([name, value]): EditModalField => {
+    // Use textarea for notes field
+    if (name === 'notes') {
+      return {
+        type: 'textarea',
+        label: name,
+        value: value,
+      }
+    }
+    
     return {
       type: 'input',
       label: name,

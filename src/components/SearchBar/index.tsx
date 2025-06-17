@@ -77,10 +77,7 @@ const SearchBar = () => {
   )
 
   useEffect(() => {
-    let searchText =
-      innerWidth < 600
-        ? 'Search'
-        : 'Search   ...... or use Shift + Tab for URL bar'
+    let searchText ='Search...'
 
     if (editing) {
       searchText = 'Edit Search Provider'
@@ -96,7 +93,11 @@ const SearchBar = () => {
       onClick={() => setShowEditModal(true)}
     />
   ) : (
-    <Icon icon="search" size={10} className={styles['search-icon']} />
+    <Icon 
+      icon="search" 
+      size={10} 
+      className={`${styles['search-icon']} ${searchTerm ? styles['search-icon-active'] : ''}`} 
+    />
   )
 
   if (loading || config?.error) {
@@ -112,7 +113,7 @@ const SearchBar = () => {
       <input
         type="text"
         name="search"
-        className={styles.search}
+        className={`${styles.search} ${searchTerm ? styles.hasContent : ''}`}
         value={searchTerm}
         onChange={handleChange}
         onKeyPress={handleDefaultSearch}

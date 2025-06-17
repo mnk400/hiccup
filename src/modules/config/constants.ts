@@ -24,6 +24,7 @@ export const DEFAULT_LINK: LinksEntity = {
   name: '',
   link: '',
   tags: '',
+  notes: '',
 }
 
 export const DEFAULT_FEATURED_LINK: FeaturedEntity = {
@@ -31,6 +32,7 @@ export const DEFAULT_FEATURED_LINK: FeaturedEntity = {
   link: '',
   background: DEFAULT_BG,
   tags: '',
+  notes: '',
 }
 
 export const DEFAULT_CATEGORY: Omit<CategoriesEntity, 'links'> = {
@@ -51,6 +53,7 @@ export const CONFIG_ENTITY_SCHEMA: JSONSchemaType<ConfigEntity> = {
           name: { type: 'string' },
           link: { type: 'string' },
           tags: { type: 'string', nullable: true },
+          notes: { type: 'string', nullable: true },
           background: { type: 'string', nullable: true },
         },
         required: ['link', 'name'],
@@ -70,6 +73,7 @@ export const CONFIG_ENTITY_SCHEMA: JSONSchemaType<ConfigEntity> = {
                 name: { type: 'string' },
                 link: { type: 'string' },
                 tags: { type: 'string', nullable: true },
+                notes: { type: 'string', nullable: true },
               },
               required: ['link', 'name'],
             },

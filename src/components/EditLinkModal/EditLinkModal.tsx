@@ -16,7 +16,7 @@ export type Entities =
   | NewEntity
 
 export type EditModalField = {
-  type: 'input' | 'select'
+  type: 'input' | 'select' | 'textarea'
   label: string
   value: string | undefined
   options?: SelectOption[]
@@ -50,6 +50,37 @@ export const EditLinkModal: FC<{
             }}
             autoFocus={index === 0}
           />
+        )
+      }
+
+      if (type === 'textarea') {
+        return (
+          <div key={index} style={{ marginBottom: '16px' }}>
+            <label htmlFor={label} style={{ display: 'block', marginBottom: '8px' }}>
+              {label}
+            </label>
+            <textarea
+              id={label}
+              name={label}
+              value={value || ''}
+              onChange={(e) => {
+                const value = e.target.value
+                setData((oldData) => {
+                  const newData = JSON.parse(JSON.stringify(oldData))
+                  newData[index].value = value
+                  return newData
+                })
+              }}
+              style={{ 
+                width: '100%', 
+                minHeight: '100px', 
+                padding: '8px',
+                borderRadius: '4px',
+                border: '1px solid #ccc'
+              }}
+              placeholder={`Enter ${label.toLowerCase()} in markdown format`}
+            />
+          </div>
         )
       }
 
