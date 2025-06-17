@@ -30,19 +30,19 @@ jobs:
         run: npm run build
 
       - name: Log in to Docker Hub
-        run: docker login -u bleckbeard -p ${{ secrets.DOCKER_ACCESS_TOKEN }}
+        run: docker login -u mxnik -p ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push Docker image
         run: |
           VERSION=${{ env.VERSION }}
 
           echo "Building docker image"
-          docker build -t bleckbeard/hiccup:latest . 
-          docker tag bleckbeard/hiccup:latest bleckbeard/hiccup:v$VERSION
+          docker build -t mxnik/hiccup:latest . 
+          docker tag mxnik/hiccup:latest mxnik/hiccup:v$VERSION
 
           echo "Pushing it to the hub"
-          docker push bleckbeard/hiccup:latest
-          docker push bleckbeard/hiccup:v$VERSION
+          docker push mxnik/hiccup:latest
+          docker push mxnik/hiccup:v$VERSION
 
       - name: Zip build artifacts
         run: zip -r hiccup@$VERSION.zip ./build/
